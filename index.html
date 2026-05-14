@@ -3,66 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piani e Prezzi</title>
+
+    <title>I Queen</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #8b0000, #1a1a1a);
+            border-bottom: 4px solid #ffcc00;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #f1f1f1;
+        }
+
+        .custom-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ff4444;
+            margin-bottom: 20px;
+        }
+
+        .queen-img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .btn-queen {
+            background: #ff4444;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .btn-queen:hover {
+            background: #cc0000;
+            transform: scale(1.1);
+        }
+
+        iframe {
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .song-title {
+            color: #ffcc00;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Scegli il piano giusto per te</h1>
-        <p class="text-muted">Nessun costo nascosto. Disdici quando vuoi</p>
+
+<section class="hero">
+    <div class="container">
+        <h1>QUEEN</h1>
+        <p>Una delle band rock più leggendarie di tutti i tempi</p>
     </div>
-    <div class="row text-center">
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column">
-                    <h5>Base</h5>
-                    <p class="price">€9<span class="muted fs-6">/mese</span></p>
-                    <ul class="list-unstyled text-start mb-4">
-                        <li>✅1 Progetto</li>
-                        <li>✅5 GB di Spazio</li>
-                        <li>❌Supporto Prioritario</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline-primary mt-auto btn-custom">Inizia Gratis</a>
+</section>
+
+<div class="container my-5">
+
+    <div class="custom-card mb-5">
+        <h2><i class="bi bi-music-note-beamed"></i> La Band</h2>
+
+        <p>
+            I <b>Queen</b> sono un famoso gruppo musicale britannico nato negli anni Settanta.
+            La band era formata da Freddie Mercury, Brian May, Roger Taylor e John Deacon.
+        </p>
+
+        <p>
+            Hanno creato capolavori immortali come
+            <b>Bohemian Rhapsody</b>,
+            <b>We Will Rock You</b>
+            e
+            <b>We Are The Champions</b>.
+        </p>
+
+        <p>
+            Freddie Mercury è considerato uno dei migliori cantanti della storia del rock.
+            <i>"The show must go on"</i> è una delle frasi più celebri legate ai Queen.
+        </p>
+    </div>
+
+    <div class="custom-card mb-5">
+        <h2><i class="bi bi-star-fill"></i> Perché i Queen sono leggendari</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-3 mb-3">
+                <div class="p-3 bg-dark rounded">
+                    <h3>🎵</h3>
+                    <p>Canzoni immortali</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 shadow pro">
-                <div class="card-body d-flex flex-column">
-                    <span class="badge bg-primary rounded-pill">Popolare</span>
-                    <h5>Pro</h5>
-                    <p class="price">€29<span class="muted fs-6">/mese</span></p>
-                    <ul class="list-unstyled text-start mb-4">
-                        <li>✅1 Progetto</li>
-                        <li>✅5 GB di Spazio</li>
-                        <li>❌Supporto Prioritario</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary mt-auto btn-custom">Scegli Pro</a>
+
+            <div class="col-md-3 mb-3">
+                <div class="p-3 bg-dark rounded">
+                    <h3>🎤</h3>
+                    <p>Voce unica di Freddie</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column">
-                    <h5>Enterprise</h5>
-                    <p class="price">€29<span class="muted fs-6">/mese</span></p>
-                    <ul class="list-unstyled text-start mb-4">
-                        <li>✅1 Progetto</li>
-                        <li>✅5 GB di Spazio</li>
-                        <li>❌Supporto Prioritario</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline-dark mt-auto btn-custom">Contattaci</a>
+
+            <div class="col-md-3 mb-3">
+                <div class="p-3 bg-dark rounded">
+                    <h3>🔥</h3>
+                    <p>Concerti epici</p>
                 </div>
             </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="p-3 bg-dark rounded">
+                    <h3>👑</h3>
+                    <p>Storia del rock</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <div class="custom-card mb-5 text-center">
+        <h2><i class="bi bi-image"></i> Concerto</h2>
+
+        <img src="queenhaven.jpg" class="queen-img">
+
+        <p class="mt-3">
+            I Queen in concerto a New Haven
+        </p>
+    </div>
+
+    <div class="custom-card mb-5 text-center">
+        <h2><i class="bi bi-globe"></i> Scopri di più</h2>
+
+        <a href="https://it.wikipedia.org/wiki/Queen" target="_blank"
+           class="btn btn-danger btn-lg">
+            Vai alla pagina Wikipedia
+        </a>
+    </div>
+
+    <div class="custom-card text-center">
+
+        <h2><i class="bi bi-youtube"></i> Video dei Queen</h2>
+
+        <div class="d-flex justify-content-center align-items-center gap-4">
+
+            <button class="btn-queen" onclick="prevVideo()">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <div>
+                <iframe id="player"
+                        width="700"
+                        height="400"
+                        src="https://www.youtube.com/embed/fJ9rUzIMcZQ"
+                        frameborder="0"
+                        allowfullscreen>
+                </iframe>
+
+                <div class="song-title" id="songTitle">
+                    Bohemian Rhapsody
+                </div>
+            </div>
+
+            <button class="btn-queen" onclick="nextVideo()">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
 </div>
 
+<footer>
+    <p>👑 Queen Fan Page - Realizzata con HTML + CSS + Bootstrap</p>
+    <img src="MuccaPolacca.gif" width="40">
+</footer>
 
+<script>
 
+    const videos = [
+        {
+            id: "fJ9rUzIMcZQ",
+            title: "Bohemian Rhapsody"
+        },
+        {
+            id: "-tJYN-eG1zk",
+            title: "We Will Rock You"
+        },
+        {
+            id: "04854XqcfCY",
+            title: "We Are The Champions"
+        }
+    ];
 
+    let index = 0;
+
+    function updateVideo() {
+
+        document.getElementById("player").src =
+            "https://www.youtube.com/embed/" + videos[index].id;
+
+        document.getElementById("songTitle").innerText =
+            videos[index].title;
+    }
+
+    function nextVideo() {
+        index = (index + 1) % videos.length;
+        updateVideo();
+    }
+
+    function prevVideo() {
+        index = (index - 1 + videos.length) % videos.length;
+        updateVideo();
+    }
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
